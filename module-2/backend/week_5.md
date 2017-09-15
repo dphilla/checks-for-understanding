@@ -34,7 +34,7 @@ line 28: grabs the image from the image folder in assets
 7. What are some of the elements of a great read me? What are some of the benefits of taking the time to update a readme for our project?
 
 A great readme usually includes a table of contents, setup instructions, clear examples and descriptions.
-A great reasons to update the readme is to add more concrete examples as you build out your project.
+A great reason to update the readme is to add more concrete examples as you build out your project.
 
 8. What are the top four accessibility issues that we as developers should be aware of?
 
@@ -50,12 +50,12 @@ A Callback. On the model for a particular resource that might be saved from user
 User.create(name: "Happy", active: true)
 ```
 
-class User
+```ruby
+class User < ApplicationRecord
   scope :active, -> {where(active: true)}
 
 end
-
-
+```
 11. What is the difference between a scope and a class method?
 
 From what I can tell, not much under-the-hood, but scopes can be chained together,
